@@ -18,6 +18,5 @@ jobs:
       - name: Build and push Docker images
         uses: docker/build-push-action@v4
         with:
-          context: is436_lab4/
           push: true
           tags: eschild3/is436_lab4:${{github.run_number}}
